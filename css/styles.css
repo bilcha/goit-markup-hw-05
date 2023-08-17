@@ -618,12 +618,17 @@ button {
   color: var(--primary-dark-color);
 }
 
+.form-input-wrapper {
+  margin-bottom: 8px;
+}
+
 .modal-form-label {
   display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
+  margin-bottom: 4px;
 }
 
 .modal-form-input {
@@ -631,7 +636,6 @@ button {
   min-width: 360px;
   border-radius: 4px;
   font-size: 18px;
-  margin: 8px 0;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border var(--transition-dur-and-func);
 }
