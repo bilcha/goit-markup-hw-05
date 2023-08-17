@@ -559,10 +559,8 @@
           </ul>
         </div>
         <div class="footer-subscribe-form">
+          <p class="footer-form-label">Subscribe</p>
           <form class="subscribe-form">
-            <label class="footer-form-label" for="subscribe-input"
-              >Subscribe</label
-            >
             <input
               id="subscribe-input"
               class="footer-subscribe-input form-input"
@@ -604,12 +602,12 @@
         </p>
         <form class="modal-form">
           <div class="form-input-wrapper">
-            <label class="modal-form-label" for="user-name-input">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-input-wrapper">
               <input
                 class="text-input modal-form-input"
-                id="user-name-input"
-                name="user_name"
+                id="user-name"
+                name="user-name"
                 type="text"
                 required
               />
@@ -663,34 +661,37 @@
               </svg>
             </div>
           </div>
-          <div class="form-input-wrapper">
-            <label class="modal-form-label" for="comment-input"> Comment</label>
+          <div class="form-input-wrapper comment-field-wrapper">
+            <label class="modal-form-label" for="user-comment"> Comment</label>
             <textarea
               class="modal-form-input modal-textarea"
-              id="comment-input"
+              id="user-comment"
               name="user_comment"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <label class="modal-form-label policy-field">
-            <input
-              type="checkbox"
-              class="hidden-policy-checkbox"
-              name="policy_acceptance"
-            />
-            <svg
-              class="custom-checkbox"
-              width="10"
-              height="8"
-              aria-label="Checkmark icon"
-            >
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
+          <div class="policy-field-wrapper">
+            <label class="modal-form-label policy-field" for="privacy">
+              <input
+                class="hidden-policy-checkbox"
+                id="privacy"
+                type="checkbox"
+                name="policy_acceptance"
+              />
+              <svg
+                class="custom-checkbox"
+                width="10"
+                height="8"
+                aria-label="Checkmark icon"
+              >
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
 
-            I accept the terms and conditions of the&nbsp;
-            <a href="" class="policy-link">Privacy Policy</a></label
-          >
+              I accept the terms and conditions of the&nbsp;
+              <a href="" class="policy-link">Privacy Policy</a></label
+            >
+          </div>
 
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>

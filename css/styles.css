@@ -522,6 +522,7 @@ button {
 .footer-submit-btn {
   padding: 8px 24px;
   min-width: 165px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -636,8 +637,10 @@ button {
   min-width: 360px;
   border-radius: 4px;
   font-size: 18px;
+  background-color: transparent;
+  outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: border var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func);
 }
 
 .text-input {
@@ -645,11 +648,14 @@ button {
   padding-left: 38px;
 }
 
+.comment-field-wrapper {
+  margin-bottom: 16px;
+}
+
 .modal-form-input:hover,
 .modal-form-input:focus {
-  outline: transparent;
   outline-offset: 4px;
-  border: 1px solid rgba(77, 90, 229, 1)
+  border-color: rgba(77, 90, 229, 1);
 }
 
 .modal-input-wrapper {
@@ -673,7 +679,10 @@ button {
 .modal-textarea {
   height: 120px;
   padding: 8px 16px;
+  font-size: 12px;
   border-radius: 4px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   resize: none;
 }
 
@@ -681,6 +690,10 @@ button {
   font-size: 12px;
   line-height: 1.17;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.policy-field-wrapper {
+  margin-bottom: 24px;
 }
 
 .hidden-policy-checkbox {
@@ -703,7 +716,6 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 16px 0 24px;
 }
 
 .custom-checkbox {
