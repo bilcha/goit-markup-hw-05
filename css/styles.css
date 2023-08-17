@@ -684,6 +684,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   resize: none;
+  color: rgba(46, 47, 66, 0.4)
 }
 
 .modal-textarea::placeholder {
@@ -702,20 +703,8 @@ button {
   opacity: 0;
 }
 
-.hidden-policy-checkbox:checked+.custom-checkbox {
-  border-color: 1px solid rgba(64, 75, 191, 1);
-  background-color: var(--pressed-button-color);
-  fill: var(--secondary-light-color);
-}
-
-.hidden-policy-checkbox:focus+.custom-checkbox {
-  outline: 1px solid rgba(77, 90, 229, 1)
-}
-
 .policy-field {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .custom-checkbox {
@@ -723,10 +712,28 @@ button {
   height: 16px;
   padding: 3px 2px;
   margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
   border-radius: 2px;
-  fill: none;
+  justify-content: center;
+  fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: var(--primary-background-color);
   transition: fill var(--transition-dur-and-func), background-color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
+}
+
+.hidden-policy-checkbox:checked+.policy-field>.custom-checkbox {
+  border-color: 1px solid rgba(64, 75, 191, 1);
+  background-color: var(--pressed-button-color);
+  fill: var(--secondary-light-color);
+}
+
+.hidden-policy-checkbox:focus+.policy-field>.custom-checkbox {
+  outline: 1px solid rgba(77, 90, 229, 1)
+}
+
+.custom-checkmark {
+  fill: inherit;
+  background-color: inherit;
 }
